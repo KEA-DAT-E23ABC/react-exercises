@@ -11,7 +11,7 @@ export default function TodosPage() {
   const [todos, setTodos] = useState([]);
 
   useEffect(() => {
-    // TODO: Fetch todos and update the state
+    getTodos().then(data => setTodos(data));
   }, []);
 
   const handleSubmit = async e => {
@@ -23,18 +23,21 @@ export default function TodosPage() {
       completed: false,
     };
 
-    // TODO: Add the new todo and update the todos list
+    await addTodo(newTodo);
+    getTodos().then(data => setTodos(data));
 
-    // TODO: RESET THE FORM AFTER ADDING THE TODO
+    e.target.reset();
   };
 
   const handleToggleComplete = async todoToToggle => {
     const updatedTodo = { ...todoToToggle, completed: !todoToToggle.completed };
-    // TODO: Update the todo completion status and refresh the todos list
+    await updateTodoById(todoToToggle.id, updatedTodo);
+    await getTodos().then(data => setTodos(data));
   };
 
   const handleDelete = async todoToDelete => {
-    // TODO: Delete the selected todo and refresh the todos list
+    await deleteTodoById(todoToDelete.id);
+    await getTodos().then(data => setTodos(data));
   };
 
   return (
@@ -42,7 +45,11 @@ export default function TodosPage() {
       <h1>Todos Exercise</h1>
       <TodoForm handleSubmit={handleSubmit} />
       {todos.length === 0 && <p>No todos</p>}
-      {/* RENDER THE TodosList COMPONENT HERE AND PASS THE NECESSARY PROPS */}
+      <TodosList
+        todos={todos}
+        handleToggleComplete={handleToggleComplete}
+        handleDelete={handleDelete}
+      />
     </div>
   );
 }
