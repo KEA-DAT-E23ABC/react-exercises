@@ -13,8 +13,11 @@ export default function ListsPage() {
         the <code>map()</code> method to create a list of elements.
       </p>
       <ul>
-        {/* TODO: RENDER USER HERE: eg. John Doe - john@email.dk */}
-        {/* HINT: Use the map() method to render the list of users. */}
+        {users.map(user => (
+          <li key={user.id}>
+            {user.name} - {user.email}
+          </li>
+        ))}
       </ul>
     </div>
   );
