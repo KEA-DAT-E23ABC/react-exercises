@@ -22,10 +22,19 @@ export default function Home() {
           <strong>State:</strong> Learn how to manage state in a component.
         </li>
         <li>
-          <strong>Fetch:</strong> Learn how to fetch data from an API.
+          <strong>Conditional Render:</strong> Learn how to conditionally render
+          components.
         </li>
         <li>
-          <strong>Todos:</strong> Learn how to CRUD operations in REACT.
+          <strong>Lists:</strong> Learn how to display lists of data, using
+          .map().
+        </li>
+        <li>
+          <strong>Fetch:</strong> Learn how to fetch data from an API, and
+          display it to the user.
+        </li>
+        <li>
+          <strong>Todos:</strong> Build a todo app with CRUD functionality.
         </li>
       </ul>
     </div>

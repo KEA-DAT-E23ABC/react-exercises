@@ -6,15 +6,6 @@ export default function Layout({ children }) {
     <main style={{ maxWidth: "900px", margin: "0 auto" }}>
       <Header />
       <div>{children}</div>
-      {/* <footer
-        style={{
-          padding: "1em",
-          backgroundColor: "",
-          borderTop: "1px solid #eaeaea",
-        }}
-      >
-        HELLO
-      </footer> */}
     </main>
   );
 }
