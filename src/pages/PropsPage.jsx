@@ -13,7 +13,7 @@ export default function PropsPage() {
         Props are used to pass data from a parent component to a child
         component.
       </p>
-      {/* TODO: RENDER THE CHILD COMPONENT HERE, PASSING THE USER OBJECT AS A PROP */}
+      <ChildComponent user={user} />
     </div>
   );
 }
