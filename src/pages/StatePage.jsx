@@ -9,7 +9,7 @@ export default function StatePage() {
         State is used to manage data that changes over time. When the state
         changes, the component re-renders.
       </p>
-      {/* TODO: RENDER THE STATE COMPONENT HERE */}
+      <StateComponent />
     </div>
   );
 }
@@ -20,10 +20,8 @@ function StateComponent() {
   return (
     <div>
       <h3>{count}</h3>
-      {/* TODO: ADD AN ONCLICK HANDLER TO INCREMENT THE COUNT */}
-      <button>Increment</button>
-      {/* TODO: ADD AN ONCLICK HANDLER TO DECREMENT THE COUNT */}
-      <button>Decrement</button>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+      <button onClick={() => setCount(count - 1)}>Decrement</button>
     </div>
   );
 }
