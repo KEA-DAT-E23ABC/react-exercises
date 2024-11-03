@@ -6,14 +6,11 @@ import "../assets/css/fetch.css";
 export default function FetchPage() {
   const [users, setUsers] = useState([]);
 
-  useEffect(
-    () => {
-      // TODO: FETCH USERS FROM: https://jsonplaceholder.typicode.com/users
-    },
-    [
-      // TODO: THINK ABOUT IF THERE SHOULD BE ANY DEPENDENCIES HERE?
-    ]
-  );
+  useEffect(() => {
+    fetch("https://jsonplaceholder.typicode.com/users")
+      .then(response => response.json())
+      .then(data => setUsers(data));
+  }, []);
 
   return (
     <div className="usersList">
