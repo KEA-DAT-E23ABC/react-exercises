@@ -7,14 +7,11 @@ export default function FetchIdPage() {
   const { id } = useParams();
   const [user, setUser] = useState(null);
 
-  useEffect(
-    () => {
-      // TODO: FETCH USERS FROM: https://jsonplaceholder.typicode.com/users/${id}
-    },
-    [
-      // TODO: THINK ABOUT IF THERE SHOULD BE ANY DEPENDENCIES HERE?
-    ]
-  );
+  useEffect(() => {
+    fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
+      .then(response => response.json())
+      .then(data => setUser(data));
+  }, [id]);
 
   return (
     <>
