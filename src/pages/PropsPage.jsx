@@ -18,12 +18,12 @@ export default function PropsPage() {
   );
 }
 
-function ChildComponent({ user }) {
+/* TODO: Make the component accept the user prop */
+function ChildComponent() {
   return (
     <div className="child">
       <h3>Props (Child component)</h3>
-      <p>{user.name}</p>
-      <p>{user.email}</p>
+      {/* TODO: RENDER the props here */}
     </div>
   );
 }

@@ -8,9 +8,10 @@ const links = [
   { id: 2, name: "Props", url: "/props" },
   { id: 3, name: "State", url: "/state" },
   { id: 4, name: "Cond. render", url: "/conditionalrender" },
-  { id: 5, name: "lists", url: "/lists" },
-  { id: 6, name: "Fetch", url: "/fetch" },
-  { id: 7, name: "Todos", url: "/todos" },
+  { id: 5, name: "Lists", url: "/lists" },
+  { id: 6, name: "Forms", url: "/forms" },
+  { id: 7, name: "Fetch", url: "/fetch" },
+  { id: 8, name: "Todos", url: "/todos" },
 ];
 
 export default function Header() {

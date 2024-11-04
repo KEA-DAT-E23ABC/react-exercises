@@ -42,19 +42,23 @@ See `/src/pages/StatePage.jsx` for the exercise instructions.
 
 See `/src/pages/ConditionalRenderPage.jsx` for the exercise instructions.
 
-### 4. Lists Exercise
+### 4. Forms Exercise
+
+See `/src/pages/FormsPage.jsx` for the exercise instructions.
+
+### 5. Lists Exercise
 
 See `/src/pages/ListsPage.jsx` for the exercise instructions.
 
-### 5. Fetch Exercise
+### 6. Fetch Exercise
 
 See `/src/pages/FetchPage.jsx` for the exercise instructions.
 
-### 6. Fetch 2 Exercise
+### 7. Fetch 2 Exercise
 
 See `/src/pages/FetchIdPage.jsx` for the exercise instructions.
 
-### 7. Todos Exercise
+### 8. Todos Exercise
 
 #### Requirements
 
