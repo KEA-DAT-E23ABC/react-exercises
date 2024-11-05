@@ -5,6 +5,9 @@
 
   color-scheme: light dark;
 
+  background-color: white;
+  color: black;
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
