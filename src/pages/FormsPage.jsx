@@ -5,7 +5,6 @@ export default function FormsPage() {
 
   const handleSubmit = e => {
     e.preventDefault();
-    // TODO: Extract input value and set state
     const formElement = e.target;
     const form = new FormData(formElement);
     // console.log(form.get("inputName"));
