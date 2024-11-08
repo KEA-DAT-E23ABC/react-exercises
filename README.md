@@ -30,6 +30,8 @@ npm run dev
 
 ## Exercises
 
+There exists a branch called `solutions`, where the solutions for the exercises are provided.
+
 ### 1. Props Exercise
 
 See `/src/pages/PropsPage.jsx` for the exercise instructions.
